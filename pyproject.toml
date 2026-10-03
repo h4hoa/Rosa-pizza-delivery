@@ -1,0 +1,21 @@
+[project]
+name = "rosa-pizza-delivery"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Hanna Nguyen", email = "ndieuhoa211@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.4",
+    "numpy>=2.5.3",
+]
+
+[project.scripts]
+rosa-pizza-delivery = "rosa_pizza_delivery:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
