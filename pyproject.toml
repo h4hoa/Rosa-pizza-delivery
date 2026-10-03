@@ -11,6 +11,8 @@ dependencies = [
     "ipykernel>=7.4.0",
     "jupyterlab>=4.6.4",
     "numpy>=2.5.3",
+    "rosa-starter",
+    "streamlit>=1.65.0",
 ]
 
 [project.scripts]
@@ -19,3 +21,6 @@ rosa-pizza-delivery = "rosa_pizza_delivery:main"
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.sources]
+rosa-starter = { git = "https://github.com/zhouy185/rosa-starter.git" }
